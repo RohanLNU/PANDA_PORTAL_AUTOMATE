@@ -11,7 +11,7 @@ public class RegisterationPage extends BaseClass {
 
 	Action action=new Action();
 	@FindBy(xpath="//h1[text()='Welcome to Panda Plus']")
-	WebElement welcomemsg;
+	WebElement welcomemsge;
 	
 	@FindBy(xpath="//input[@placeholder='First Name']")
 	WebElement firstname;
@@ -39,7 +39,7 @@ public class RegisterationPage extends BaseClass {
 	
 	public boolean validateWelcomeMessage()
 	{
-		return action.isDisplayed(getDriver(),welcomemsg);
+		return action.isDisplayed(getDriver(),welcomemsge);
 	}
 	
 	public String validateregPageTitle()
